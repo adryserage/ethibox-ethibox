@@ -33,8 +33,7 @@
     "test": "npm run test:unit && npm run test:e2e",
     "test:e2e": "cypress run",
     "test:unit": "jest --forceExit -i __tests__/unit/*.spec.js",
-    "test:ci": "concurrently -k -s first \"npm run dev\" \"npm run test\"",
-    "preinstall": "node preinstall.js"
+    "test:ci": "concurrently -k -s first \"npm run dev\" \"npm run test\""
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
